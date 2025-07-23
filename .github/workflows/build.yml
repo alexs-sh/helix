@@ -1,12 +1,5 @@
 name: Build
-on:
-  pull_request:
-  push:
-    branches:
-      - master
-  merge_group:
-  schedule:
-    - cron: "00 01 * * *"
+on: [push]
 
 env:
   MSRV: "1.82"
